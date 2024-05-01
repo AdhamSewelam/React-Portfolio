@@ -7,10 +7,10 @@ import { useState } from 'react';
 
 function Sidebar() {
   const location = useLocation();
-  const [showOffcanvas, setShowOffcanvas] = useState(false); // State to control offcanvas visibility
+  const [showOffcanvas, setShowOffcanvas] = useState(false); 
 
   const handleLinkClick = () => {
-    setShowOffcanvas(false); // Close offcanvas when a link is clicked
+    setShowOffcanvas(false); 
   };
 
   return (
