@@ -115,6 +115,44 @@ function Work() {
             ))}
           </Row>
         </Tab>
+        <Tab eventKey="software" title="Software ">
+          <Row>
+            {displayedWorks.map((work, index) => (
+              <Col md={6} key={index}>
+                <div
+                  className="project"
+                  style={{ backgroundImage: `url(${work})` }}
+                >
+                  <div class="desc pt-4">
+                    <div class="con">
+                      <h3>
+                        <a href="work.html">Work 02</a>
+                      </h3>
+                      <span>Animation</span>
+                      <p class="icon">
+                        <span>
+                          <a href="#">
+                            <i className="fa-solid fa-share-nodes"></i>
+                          </a>
+                        </span>
+                        <span>
+                          <a href="#">
+                            <i className="fa-regular fa-eye"></i> 100
+                          </a>
+                        </span>
+                        <span>
+                          <a href="#">
+                            <i className="fa-regular fa-heart"></i> 49
+                          </a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Tab>
       </Tabs>
       {!showMore && (
         <Button
