@@ -2,12 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 // COMPONENTS
 import Sidebar from "./components/Sidebar/Sidebar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
-import Counter from "./components/Counter/Counter";
-import Experience from "./components/Experience/Experience";
-import Work from "./components/Work/Work";
+import RouterConfig from "./components/Common/RouterConfig";
 
 // STYLES
 import "./App.css";
@@ -19,13 +14,8 @@ function App() {
         <Col className="p-0" md={2}>
           <Sidebar />
         </Col>
-        <Col className="position-relative p-0" md={10}>
-          <Home />
-          <About />
-          <Counter />
-          <Skills />
-          <Experience />
-          <Work />
+        <Col className="position-relative p-0 containerWidth" md={10}>
+          <RouterConfig />
         </Col>
       </Row>
     </Container>

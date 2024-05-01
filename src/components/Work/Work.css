@@ -1,3 +1,16 @@
+#work {
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+}
+
+@media (max-width: 768px) {
+  #work {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    padding-top: 15% !important;
+  }
+}
+
 .workTitle {
   margin-bottom: 15px;
   display: block;

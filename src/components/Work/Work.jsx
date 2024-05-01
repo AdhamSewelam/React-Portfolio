@@ -28,7 +28,7 @@ function Work() {
   };
 
   return (
-    <div id="work" className="container py-5">
+    <div id="work" className="container py-5 mt-lg-0 mt-3">
       <p className="workTitle">MY WORK</p>
 
       <h2 className="workHeading">RECENT WORK</h2>

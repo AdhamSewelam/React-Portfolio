@@ -2,7 +2,10 @@ import "./Experience.css";
 
 function Experience() {
   return (
-    <div id="experience" className="container py-5">
+    <div
+      id="experience"
+      className="container py-5"
+    >
       <p className="experienceTitle">EXPERIENCE</p>
 
       <h2 className="experienceHeading">WORK EXPERIENCE</h2>

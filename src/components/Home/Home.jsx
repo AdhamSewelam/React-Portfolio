@@ -1,12 +1,28 @@
 import { Button, Carousel } from "react-bootstrap";
+import { useState, useEffect } from "react";
 
 // STYLES
 import "./Home.css";
 
 function Home() {
+  const [index, setIndex] = useState(0); 
+
+  const handleSelect = (selectedIndex, event) => {
+    setIndex(selectedIndex);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const newIndex = (index + 1) % 2; 
+      setIndex(newIndex);
+    }, 3000); 
+
+    return () => clearTimeout(timer); 
+  }, [index]);
+
   return (
     <div>
-      <Carousel fade>
+      <Carousel fade activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item className="vh-100 d-flex flex-column justify-content-center heroSection slider1">
           <div className="container text-center text-md-start">
             <h1 className="text-lg-start text-center">

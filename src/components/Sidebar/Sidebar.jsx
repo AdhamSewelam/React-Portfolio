@@ -1,16 +1,12 @@
 // STYLES
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  NavDropdown,
-  Navbar,
-  Offcanvas,
-} from "react-bootstrap";
+import { Container, Navbar, Offcanvas } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Sidebar.module.css";
+import { ABOUT, EXPERIENCE, ROOT, SKILLS, WORK } from "../Common/Constants";
 
 function Sidebar() {
+  const location = useLocation();
+
   return (
     <>
       <Navbar
@@ -38,38 +34,58 @@ function Sidebar() {
               <div className={`${styles.sidebarImage}`}></div>
 
               <h1 className={`${styles.sidebarUsername}`}>
-                <a href="#">Jackson Ford</a>
+                <Link to={ROOT}>Jackson Ford</Link>
               </h1>
 
               <p className={`${styles.sidebarUserinfo}`}>
-                <a href="#">UI/UX/Designer</a> in Philippines
+                <Link to={ROOT}>UI/UX/Designer</Link> in Philippines
               </p>
 
               <ul className={`${styles.sidebarList}`}>
-                <li className={`${styles.active}`}>
-                  <a href="#" data-nav-section="home">
+                <li
+                  className={
+                    location.pathname === ROOT ? `${styles.active}` : ""
+                  }
+                >
+                  <Link to={ROOT} data-nav-section="home">
                     Home
-                  </a>
+                  </Link>
                 </li>
-                <li className="">
-                  <a href="#about" data-nav-section="about">
+                <li
+                  className={
+                    location.pathname === ABOUT ? `${styles.active}` : ""
+                  }
+                >
+                  <Link to={ABOUT} data-nav-section="about">
                     About
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a href="#skills" data-nav-section="skills">
+                <li
+                  className={
+                    location.pathname === SKILLS ? `${styles.active}` : ""
+                  }
+                >
+                  <Link to={SKILLS} data-nav-section="skills">
                     Skills
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a href="#experience" data-nav-section="experience">
+                <li
+                  className={
+                    location.pathname === EXPERIENCE ? `${styles.active}` : ""
+                  }
+                >
+                  <Link to={EXPERIENCE} data-nav-section="experience">
                     Experience
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a href="#work" data-nav-section="work">
+                <li
+                  className={
+                    location.pathname === WORK ? `${styles.active}` : ""
+                  }
+                >
+                  <Link to={WORK} data-nav-section="work">
                     Work
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -89,30 +105,36 @@ function Sidebar() {
         </p>
 
         <ul className={`${styles.sidebarList}`}>
-          <li className={`${styles.active}`}>
-            <a href="#" data-nav-section="home">
+          <li className={location.pathname === ROOT ? `${styles.active}` : ""}>
+            <Link to={ROOT} data-nav-section="home">
               Home
-            </a>
+            </Link>
           </li>
-          <li className="">
-            <a href="#about" data-nav-section="about">
+          <li className={location.pathname === ABOUT ? `${styles.active}` : ""}>
+            <Link to={ABOUT} data-nav-section="about">
               About
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#skills" data-nav-section="skills">
+          <li
+            className={location.pathname === SKILLS ? `${styles.active}` : ""}
+          >
+            <Link to={SKILLS} data-nav-section="skills">
               Skills
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#experience" data-nav-section="experience">
+          <li
+            className={
+              location.pathname === EXPERIENCE ? `${styles.active}` : ""
+            }
+          >
+            <Link to={EXPERIENCE} data-nav-section="experience">
               Experience
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#work" data-nav-section="work">
+          <li className={location.pathname === WORK ? `${styles.active}` : ""}>
+            <Link to={WORK} data-nav-section="work">
               Work
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

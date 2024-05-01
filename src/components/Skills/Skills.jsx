@@ -3,7 +3,7 @@ import "./Skills.css";
 
 function Skills() {
   return (
-    <div id="skills" className="container py-5">
+    <div id="skills" className="container py-5 mt-lg-0 mt-3 d-lg-flex d-block flex-column justify-content-center vh-100">
       <p className="skillsTitle">MY SPECIALTY</p>
 
       <h2 className="skillsHeading">MY SKILLS</h2>

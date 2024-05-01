@@ -17,6 +17,7 @@
     "animate.css-react": "^1.1.0",
     "bootstrap": "^5.3.3",
     "flexslider": "^2.7.2",
+    "framer-motion": "^11.1.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-countup": "^6.5.3",
