@@ -1,0 +1,113 @@
+.skillsTitle {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.skillsHeading {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+  margin: 0 0 30px 0;
+  color: #000;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.skillsText {
+  margin-bottom: 1.5em;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.progressTitle {
+  font-size: 16px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #000;
+  margin: 25px 0 0 0;
+}
+
+.progress {
+  height: 6px;
+  box-shadow: none;
+  background: #f2f3f7;
+  overflow: visible;
+}
+
+.progress-bar:after {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  content: '';
+  background: #2c98f0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.proColor1 .progress-bar:after,
+.proColor1 .progress-bar {
+  color: #2c98f0 !important;
+  background: #2c98f0 !important;
+}
+
+.proColor2 .progress-bar:after,
+.proColor2 .progress-bar {
+  color: #f9bf3f !important;
+  background: #f9bf3f !important;
+}
+
+.proColor3 .progress-bar:after,
+.proColor3 .progress-bar {
+  color: #2fa499 !important;
+  background: #2fa499 !important;
+}
+
+.proColor4 .progress-bar:after,
+.proColor4 .progress-bar {
+  color: #ec5453 !important;
+  background: #ec5453 !important;
+}
+
+.proColor5 .progress-bar:after,
+.proColor5 .progress-bar {
+  color: #a84cb8 !important;
+  background: #a84cb8 !important;
+}
+
+.proColor6 .progress-bar:after,
+.proColor6 .progress-bar {
+  color: #4054b2 !important;
+  background: #4054b2 !important;
+}
+
+.progress-bar {
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 600;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+  border-radius: 8px;
+  float: left;
+  height: 100%;
+  transition: width 0.6s ease;
+}

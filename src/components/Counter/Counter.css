@@ -1,0 +1,46 @@
+.counterImage {
+  background-image: url('../../assets/cover_bg_1.jpg');
+  margin-bottom: 5em;
+  padding: 3em 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.overlay {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.counterNumber {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.counterNumber h1 span {
+  font-size: 40px;
+  display: block;
+  color: white;
+  font-family: 'Quicksand', Arial, sans-serif;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.counterNumber p {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin-bottom: 2em;
+}
